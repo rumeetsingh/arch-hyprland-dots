@@ -8,7 +8,7 @@ capsule_opacity = 0.79999998211860657
 capsule_padding = 10.0
 capsule_radius = 8
 capsule_thickness = 0.59999999031424522
-center = [ "clock", "wallpaper" ]
+center = [ "date", "clock" ]
 concave_edge_corners = false
 end = [ "group:g2", "notifications", "clipboard", "group:g3", "group:g4", "volume", "nightlight", "temp", "weather" ]
 font_family = "JetBrains Mono"
@@ -28,7 +28,7 @@ thickness = 45
     enabled = true
     fill = "on_surface"
     id = "g1"
-    members = [ "Files", "Internet", "Terminal", "VSCode" ]
+    members = [ "Files", "Chrome", "Internet", "Terminal", "VSCode", "Steam", "Heroic" ]
     opacity = 0.05000000074505806
     padding = 6.0
     widget_spacing = 12
@@ -40,7 +40,7 @@ thickness = 45
     enabled = true
     fill = "surface_variant"
     id = "g3"
-    members = [ "screenshot", "Colorpicker" ]
+    members = [ "wallpaper", "screenshot", "Colorpicker" ]
     opacity = 0.79999995231628418
     padding = 6.0
     radius = 8.0
@@ -76,6 +76,12 @@ thickness = 45
 sidebar = "full"
 sidebar_section = "none"
 width = 800
+
+[dock]
+concave_edge_corners = false
+icon_size = 38
+launcher_position = "start"
+margin_edge = 14
 
 [location]
 auto_locate = true
@@ -154,13 +160,23 @@ wallpaper_scheme = "m3-content"
 directory = "~/Pictures/Wallpapers"
 
     [wallpaper.default]
-    path = "/home/rumit/Pictures/Wallpapers/mountain01.png"
+    path = "/home/rumit/Pictures/Wallpapers/oMjYSz.webp"
 
     [wallpaper.last]
-    path = "/home/rumit/Pictures/Wallpapers/mountain01.png"
+    path = "/home/rumit/Pictures/Wallpapers/oMjYSz.webp"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/rumit/Pictures/Wallpapers/mountain01.png"
+    path = "/home/rumit/Pictures/Wallpapers/oMjYSz.webp"
+
+[widget.Chrome]
+color = "primary"
+glyph = "brand-chrome"
+icon_color = "tertiary"
+tooltip = "Google Chrome"
+type = "custom_button"
+
+    [widget.Chrome.actions]
+    left = "exec google-chrome-stable"
 
 [widget.Colorpicker]
 glyph = "color-picker"
@@ -178,14 +194,31 @@ type = "custom_button"
     [widget.Files.actions]
     left = "exec exec nautilus --new-window"
 
+[widget.Heroic]
+glyph = "bluetooth-device-gamepad"
+tooltip = "Heroic"
+type = "custom_button"
+
+    [widget.Heroic.actions]
+    left = "exec heroic"
+
 [widget.Internet]
 color = "#F9C98F"
+enabled = false
 glyph = "brand-firefox"
 tooltip = "Firefox"
 type = "custom_button"
 
     [widget.Internet.actions]
     left = "exec exec firefox"
+
+[widget.Steam]
+glyph = "brand-steam"
+tooltip = "Steam"
+type = "custom_button"
+
+    [widget.Steam.actions]
+    left = "exec steam"
 
 [widget.Terminal]
 glyph = "terminal-2"
@@ -220,11 +253,17 @@ width = 30
 capsule = true
 
 [widget.clock]
+capsule = false
 format = "{:%H:%M:%S}"
+interactive = false
 
 [widget.control-center]
 custom_image = "/home/rumit/.icons/arch.svg"
 glyph = ""
+
+[widget.date]
+capsule = true
+capsule_opacity = 0.0
 
 [widget.media]
 font_scale = 0.80000000000000004
@@ -252,3 +291,4 @@ match_adjacent_spacing = true
 [widget.weather]
 capsule_fill = "secondary"
 color = "on_secondary"
+font_scale = 0.80000000000000004
