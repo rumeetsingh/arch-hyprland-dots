@@ -17,7 +17,7 @@ margin_ends = 10
 padding = 10
 scale = 1.2500000111758709
 shadow = false
-start = [ "control-center", "launcher", "group:g1", "workspaces", "active_window", "tray" ]
+start = [ "control-center", "launcher", "group:g1", "workspaces", "tray", "active_window" ]
 thickness = 45
 
     [[bar.default.capsule_group]]
@@ -244,6 +244,10 @@ right = "none"
 [widget.tray]
 capsule_border_width = 0.5
 capsule_padding = 7
+detached_panel = true
+drawer = true
+drawer_columns = 5
+match_adjacent_spacing = true
 
 [widget.weather]
 capsule_fill = "secondary"
