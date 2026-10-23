@@ -1,0 +1,250 @@
+[accessibility]
+ui_scale = 1.2000000104308128
+
+[bar.default]
+background_opacity = 0.69999998435378075
+capsule = true
+capsule_opacity = 0.79999998211860657
+capsule_padding = 10.0
+capsule_radius = 8
+capsule_thickness = 0.59999999031424522
+center = [ "clock", "wallpaper" ]
+concave_edge_corners = false
+end = [ "group:g2", "notifications", "clipboard", "group:g3", "group:g4", "volume", "nightlight", "temp", "weather" ]
+font_family = "JetBrains Mono"
+margin_edge = 7
+margin_ends = 10
+padding = 10
+scale = 1.2500000111758709
+shadow = false
+start = [ "control-center", "launcher", "group:g1", "workspaces", "active_window", "tray" ]
+thickness = 45
+
+    [[bar.default.capsule_group]]
+    accordion = false
+    accordion_direction = "end"
+    border = ""
+    border_width = 0.5
+    enabled = true
+    fill = "on_surface"
+    id = "g1"
+    members = [ "Files", "Internet", "Terminal", "VSCode" ]
+    opacity = 0.05000000074505806
+    padding = 6.0
+    widget_spacing = 12
+
+    [[bar.default.capsule_group]]
+    accordion = false
+    accordion_direction = "end"
+    border_width = 0.5
+    enabled = true
+    fill = "surface_variant"
+    id = "g3"
+    members = [ "screenshot", "Colorpicker" ]
+    opacity = 0.79999995231628418
+    padding = 6.0
+    radius = 8.0
+    widget_spacing = 12
+
+    [[bar.default.capsule_group]]
+    accordion = false
+    accordion_direction = "end"
+    border_width = 0.5
+    enabled = true
+    fill = "surface_variant"
+    id = "g4"
+    members = [ "network", "bluetooth" ]
+    opacity = 0.79999995231628418
+    padding = 6.0
+    radius = 8.0
+    widget_spacing = 12
+
+    [[bar.default.capsule_group]]
+    accordion = false
+    accordion_direction = "end"
+    border_width = 0.5
+    enabled = true
+    fill = "surface_variant"
+    id = "g2"
+    members = [ "audio_visualizer", "media" ]
+    opacity = 0.79999995231628418
+    padding = 6.0
+    radius = 8.0
+    widget_spacing = 12
+
+[control_center]
+sidebar = "full"
+sidebar_section = "none"
+width = 800
+
+[location]
+auto_locate = true
+
+[lockscreen_widgets]
+enabled = false
+schema_version = 2
+widget_order = [ "lockscreen-login-box@DP-1" ]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@DP-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 1280.0
+    cy = 1258.0
+    output = "DP-1"
+    placement_height = 1440.0
+    placement_width = 2560.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@DP-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_password_reveal = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+[osd.kinds]
+nightlight = false
+
+[plugins]
+enabled = []
+
+[shell]
+font_family = "Inter"
+panel_anchor_bar = "default"
+polkit_agent = true
+
+    [shell.launcher]
+    layout = "simple"
+
+    [shell.panel]
+    control_center_placement = "floating"
+    open_near_click_control_center = true
+    open_near_click_launcher = true
+    open_near_click_wallpaper = true
+    transparency_mode = "soft"
+    wallpaper_placement = "floating"
+
+[theme]
+builtin = "Tokyo-Night"
+community_palette = "Oxocarbon"
+mode = "dark"
+source = "builtin"
+wallpaper_scheme = "m3-content"
+
+    [theme.templates]
+    builtin_ids = [ "gtk3", "qt" ]
+
+[wallpaper]
+directory = "~/Pictures/Wallpapers"
+
+    [wallpaper.default]
+    path = "/home/rumit/Pictures/Wallpapers/mountain01.png"
+
+    [wallpaper.last]
+    path = "/home/rumit/Pictures/Wallpapers/mountain01.png"
+
+    [wallpaper.monitors.DP-1]
+    path = "/home/rumit/Pictures/Wallpapers/mountain01.png"
+
+[widget.Colorpicker]
+glyph = "color-picker"
+tooltip = "Colorpicker"
+type = "custom_button"
+
+    [widget.Colorpicker.actions]
+    left = "exec hyprpicker -a"
+
+[widget.Files]
+glyph = "folder"
+tooltip = "Files"
+type = "custom_button"
+
+    [widget.Files.actions]
+    left = "exec exec nautilus --new-window"
+
+[widget.Internet]
+color = "#F9C98F"
+glyph = "brand-firefox"
+tooltip = "Firefox"
+type = "custom_button"
+
+    [widget.Internet.actions]
+    left = "exec exec firefox"
+
+[widget.Terminal]
+glyph = "terminal-2"
+tooltip = "Terminal"
+type = "custom_button"
+
+    [widget.Terminal.actions]
+    left = "exec exec kitty"
+
+[widget.VSCode]
+color = "#23A9F2"
+glyph = "brand-vscode"
+tooltip = "Visual Studio Code"
+type = "custom_button"
+
+    [widget.VSCode.actions]
+    left = "exec exec code"
+
+[widget.active_window]
+capsule_fill = "primary"
+color = "on_primary"
+font_scale = 0.80000000000000004
+max_length = 180
+
+[widget.audio_visualizer]
+bands = 7
+color_1 = "secondary"
+color_2 = "tertiary"
+width = 30
+
+[widget.clipboard]
+capsule = true
+
+[widget.clock]
+format = "{:%H:%M:%S}"
+
+[widget.control-center]
+custom_image = "/home/rumit/.icons/arch.svg"
+glyph = ""
+
+[widget.media]
+font_scale = 0.80000000000000004
+hide_when_no_media = true
+max_length = 150
+min_length = 60
+rotate_album_art = true
+title_scroll = "always"
+
+[widget.network]
+show_label = false
+
+[widget.nightlight.actions]
+left = "nightlight-force-toggle"
+right = "none"
+
+[widget.tray]
+capsule_border_width = 0.5
+capsule_padding = 7
+
+[widget.weather]
+capsule_fill = "secondary"
+color = "on_secondary"
