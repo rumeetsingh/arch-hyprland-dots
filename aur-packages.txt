@@ -1,5 +1,7 @@
 bibata-cursor-theme
+google-chrome
 heroic-games-launcher-bin
+heroic-games-launcher-bin-debug
 ttf-ms-fonts
 visual-studio-code-bin
 yay

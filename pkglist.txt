@@ -12,6 +12,7 @@ firefox
 fish
 gamemode
 git
+google-chrome
 grim
 gst-plugin-pipewire
 heroic-games-launcher-bin
@@ -23,6 +24,7 @@ inter-font
 iwd
 kitty
 lib32-gamemode
+lib32-mangohud
 lib32-mesa
 lib32-vulkan-radeon
 libpulse
@@ -30,11 +32,14 @@ limine
 linux
 linux-firmware
 loupe
+mangohud
 mkinitcpio
 nano
 nautilus
 ncdu
+net-tools
 networkmanager
+nm-connection-editor
 noctalia
 noto-fonts
 noto-fonts-cjk
