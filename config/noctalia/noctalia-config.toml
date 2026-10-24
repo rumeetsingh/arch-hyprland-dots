@@ -10,7 +10,18 @@ capsule_radius = 8
 capsule_thickness = 0.59999999031424522
 center = [ "date", "clock" ]
 concave_edge_corners = false
-end = [ "group:g2", "notifications", "clipboard", "group:g3", "group:g4", "volume", "nightlight", "temp", "weather" ]
+end = [
+    "group:g2",
+    "notifications",
+    "clipboard",
+    "group:g3",
+    "group:g4",
+    "volume",
+    "temp",
+    "sysmon",
+    "weather",
+    "nightlight"
+]
 font_family = "JetBrains Mono"
 margin_edge = 7
 margin_ends = 10
@@ -77,6 +88,37 @@ sidebar = "full"
 sidebar_section = "none"
 width = 800
 
+[desktop_widgets]
+schema_version = 2
+widget_order = [ "desktop-widget-0000000000000001" ]
+
+    [desktop_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [desktop_widgets.widget.desktop-widget-0000000000000001]
+    box_height = 144.0
+    box_width = 608.0
+    cx = 320.0
+    cy = 104.0
+    flip_y = true
+    output = "DP-1"
+    placement_height = 1440.0
+    placement_width = 2560.0
+    rotation = 0.0
+    type = "audio_visualizer"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000001.settings]
+        background_opacity = 0.0
+        bands = 28
+        centered = false
+        color_1 = "primary"
+        color_2 = "error"
+        mirrored = false
+        reversed = false
+        show_when_idle = false
+
 [dock]
 concave_edge_corners = false
 icon_size = 38
@@ -125,6 +167,7 @@ widget_order = [ "lockscreen-login-box@DP-1" ]
         show_weather = true
 
 [osd.kinds]
+media = false
 nightlight = false
 
 [plugins]
@@ -139,12 +182,17 @@ polkit_agent = true
     layout = "simple"
 
     [shell.panel]
+    clipboard_position = "auto"
     control_center_placement = "floating"
+    open_near_click_clipboard = true
     open_near_click_control_center = true
     open_near_click_launcher = true
     open_near_click_wallpaper = true
     transparency_mode = "soft"
     wallpaper_placement = "floating"
+
+    [shell.screenshot]
+    directory = "/home/rumit/Pictures/Screenshots"
 
 [theme]
 builtin = "Tokyo-Night"
@@ -160,13 +208,13 @@ wallpaper_scheme = "m3-content"
 directory = "~/Pictures/Wallpapers"
 
     [wallpaper.default]
-    path = "/home/rumit/Pictures/Wallpapers/oMjYSz.webp"
+    path = "/home/rumit/Pictures/Wallpapers/tanjiro-kamado-red-2560x1440-22577.png"
 
     [wallpaper.last]
-    path = "/home/rumit/Pictures/Wallpapers/oMjYSz.webp"
+    path = "/home/rumit/Pictures/Wallpapers/tanjiro-kamado-red-2560x1440-22577.png"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/rumit/Pictures/Wallpapers/oMjYSz.webp"
+    path = "/home/rumit/Pictures/Wallpapers/tanjiro-kamado-red-2560x1440-22577.png"
 
 [widget.Chrome]
 color = "primary"
@@ -279,6 +327,11 @@ show_label = false
 [widget.nightlight.actions]
 left = "nightlight-force-toggle"
 right = "none"
+
+[widget.sysmon]
+interactive = false
+show_tooltip = false
+stat = "disk_used_pct"
 
 [widget.tray]
 capsule_border_width = 0.5

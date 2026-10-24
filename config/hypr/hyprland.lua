@@ -57,7 +57,7 @@ local browser = "google-chrome-stable"
 -- end)
 
 hl.on("hyprland.start", function()
-	hl.exec_cmd("systemctl --user start hyprpolkitagent")
+	-- hl.exec_cmd("systemctl --user start hyprpolkitagent")
 	hl.exec_cmd("noctalia")
 	hl.exec_cmd("hyprctl setcursor Bibata-Modern-Ice 24")
 end)
@@ -70,6 +70,7 @@ end)
 
 hl.env("XCURSOR_SIZE", "24")
 hl.env("HYPRCURSOR_SIZE", "24")
+hl.env("QT_QPA_PLATFORMTHEME", "qt6ct")
 
 -----------------------
 ----- PERMISSIONS -----
