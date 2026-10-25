@@ -23,7 +23,7 @@ end = [
     "nightlight"
 ]
 font_family = "JetBrains Mono"
-margin_edge = 7
+margin_edge = 10
 margin_ends = 10
 padding = 10
 scale = 1.2500000111758709
@@ -209,13 +209,13 @@ wallpaper_scheme = "m3-content"
 directory = "~/Pictures/Wallpapers"
 
     [wallpaper.default]
-    path = "/home/rumit/Pictures/Wallpapers/tanjiro-kamado-red-2560x1440-22577.png"
+    path = "/home/rumit/Pictures/Wallpapers/firefly-honkai-star-2560x1440-26937.jpg"
 
     [wallpaper.last]
-    path = "/home/rumit/Pictures/Wallpapers/tanjiro-kamado-red-2560x1440-22577.png"
+    path = "/home/rumit/Pictures/Wallpapers/firefly-honkai-star-2560x1440-26937.jpg"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/rumit/Pictures/Wallpapers/tanjiro-kamado-red-2560x1440-22577.png"
+    path = "/home/rumit/Pictures/Wallpapers/firefly-honkai-star-2560x1440-26937.jpg"
 
 [widget.Chrome]
 color = "primary"
