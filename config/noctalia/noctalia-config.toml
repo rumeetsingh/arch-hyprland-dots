@@ -15,10 +15,10 @@ end = [
     "notifications",
     "clipboard",
     "group:g3",
-    "group:g4",
-    "volume",
     "temp",
     "sysmon",
+    "group:g4",
+    "volume",
     "weather",
     "nightlight"
 ]
@@ -101,7 +101,7 @@ widget_order = [ "desktop-widget-0000000000000001" ]
     box_height = 144.0
     box_width = 608.0
     cx = 320.0
-    cy = 104.0
+    cy = 120.0
     flip_y = true
     output = "DP-1"
     placement_height = 1440.0
@@ -110,6 +110,7 @@ widget_order = [ "desktop-widget-0000000000000001" ]
     type = "audio_visualizer"
 
         [desktop_widgets.widget.desktop-widget-0000000000000001.settings]
+        background = false
         background_opacity = 0.0
         bands = 28
         centered = false
@@ -196,7 +197,7 @@ polkit_agent = true
 
 [theme]
 builtin = "Tokyo-Night"
-community_palette = "Oxocarbon"
+community_palette = "Macaron"
 mode = "dark"
 source = "builtin"
 wallpaper_scheme = "m3-content"
