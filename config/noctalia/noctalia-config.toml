@@ -178,6 +178,7 @@ enabled = []
 font_family = "Inter"
 panel_anchor_bar = "default"
 polkit_agent = true
+settings_window_translucent = true
 
     [shell.launcher]
     layout = "simple"
@@ -189,11 +190,15 @@ polkit_agent = true
     open_near_click_control_center = true
     open_near_click_launcher = true
     open_near_click_wallpaper = true
+    session_placement = "floating"
     transparency_mode = "soft"
     wallpaper_placement = "floating"
 
     [shell.screenshot]
     directory = "/home/rumit/Pictures/Screenshots"
+
+    [shell.session]
+    show_shortcuts = false
 
 [theme]
 builtin = "Tokyo-Night"
