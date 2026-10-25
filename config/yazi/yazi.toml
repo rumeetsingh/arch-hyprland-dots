@@ -1,0 +1,13 @@
+[mgr]
+linemode = "size"
+
+[opener]
+edit = [
+    { run = 'kitty micro %s', desc = "Micro (new Kitty window)", for = "unix" },
+]
+
+[open]
+prepend_rules = [
+    { mime = "text/*", use = "edit" },
+    { mime = "application/json", use = "edit" },
+]

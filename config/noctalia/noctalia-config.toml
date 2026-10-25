@@ -209,24 +209,26 @@ wallpaper_scheme = "m3-content"
 
     [theme.templates]
     builtin_ids = [ "gtk3", "qt" ]
+    enable_community_templates = false
 
 [wallpaper]
 directory = "~/Pictures/Wallpapers"
 
     [wallpaper.default]
-    path = "/home/rumit/Pictures/Wallpapers/zenitsu-agatsuma-2560x1440-26520.jpg"
+    path = "/home/rumit/Pictures/Wallpapers/tanjiro-kamado-red-2560x1440-22577.png"
 
     [wallpaper.last]
-    path = "/home/rumit/Pictures/Wallpapers/zenitsu-agatsuma-2560x1440-26520.jpg"
+    path = "/home/rumit/Pictures/Wallpapers/tanjiro-kamado-red-2560x1440-22577.png"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/rumit/Pictures/Wallpapers/zenitsu-agatsuma-2560x1440-26520.jpg"
+    path = "/home/rumit/Pictures/Wallpapers/tanjiro-kamado-red-2560x1440-22577.png"
 
 [widget.Chrome]
 color = "primary"
 glyph = "brand-chrome"
 icon_color = "tertiary"
-tooltip = "Google Chrome"
+show_tooltip = false
+tooltip = ""
 type = "custom_button"
 
     [widget.Chrome.actions]
@@ -242,15 +244,17 @@ type = "custom_button"
 
 [widget.Files]
 glyph = "folder"
-tooltip = "Files"
+show_tooltip = false
+tooltip = ""
 type = "custom_button"
 
     [widget.Files.actions]
-    left = "exec nautilus --new-window"
+    left = "exec kitty -e yazi"
 
 [widget.Heroic]
 glyph = "bluetooth-device-gamepad"
-tooltip = "Heroic"
+show_tooltip = false
+tooltip = ""
 type = "custom_button"
 
     [widget.Heroic.actions]
@@ -260,7 +264,8 @@ type = "custom_button"
 color = "#F9C98F"
 enabled = false
 glyph = "brand-firefox"
-tooltip = "Firefox"
+show_tooltip = false
+tooltip = ""
 type = "custom_button"
 
     [widget.Internet.actions]
@@ -268,7 +273,8 @@ type = "custom_button"
 
 [widget.Steam]
 glyph = "brand-steam"
-tooltip = "Steam"
+show_tooltip = false
+tooltip = ""
 type = "custom_button"
 
     [widget.Steam.actions]
@@ -276,7 +282,8 @@ type = "custom_button"
 
 [widget.Terminal]
 glyph = "terminal-2"
-tooltip = "Terminal"
+show_tooltip = false
+tooltip = ""
 type = "custom_button"
 
     [widget.Terminal.actions]
@@ -285,7 +292,8 @@ type = "custom_button"
 [widget.VSCode]
 color = "#23A9F2"
 glyph = "brand-vscode"
-tooltip = "Visual Studio Code"
+show_tooltip = false
+tooltip = ""
 type = "custom_button"
 
     [widget.VSCode.actions]
@@ -296,6 +304,7 @@ capsule_fill = "primary"
 color = "on_primary"
 font_scale = 0.80000000000000004
 max_length = 180
+show_tooltip = false
 
 [widget.audio_visualizer]
 bands = 7

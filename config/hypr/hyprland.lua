@@ -37,7 +37,7 @@ hl.monitor({
 
 -- Set programs that you use
 local terminal = "kitty"
-local fileManager = "nautilus --new-window"
+local fileManager = "kitty -e yazi"
 local menu = "noctalia msg panel-toggle launcher"
 local browser = "google-chrome-stable"
 
