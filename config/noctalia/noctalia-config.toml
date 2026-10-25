@@ -101,7 +101,7 @@ widget_order = [ "desktop-widget-0000000000000001" ]
     box_height = 144.0
     box_width = 608.0
     cx = 320.0
-    cy = 120.0
+    cy = 128.0
     flip_y = true
     output = "DP-1"
     placement_height = 1440.0
@@ -209,13 +209,13 @@ wallpaper_scheme = "m3-content"
 directory = "~/Pictures/Wallpapers"
 
     [wallpaper.default]
-    path = "/home/rumit/Pictures/Wallpapers/firefly-honkai-star-2560x1440-26937.jpg"
+    path = "/home/rumit/Pictures/Wallpapers/tanjiro-kamado-red-2560x1440-22577.png"
 
     [wallpaper.last]
-    path = "/home/rumit/Pictures/Wallpapers/firefly-honkai-star-2560x1440-26937.jpg"
+    path = "/home/rumit/Pictures/Wallpapers/tanjiro-kamado-red-2560x1440-22577.png"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/rumit/Pictures/Wallpapers/firefly-honkai-star-2560x1440-26937.jpg"
+    path = "/home/rumit/Pictures/Wallpapers/tanjiro-kamado-red-2560x1440-22577.png"
 
 [widget.Chrome]
 color = "primary"
