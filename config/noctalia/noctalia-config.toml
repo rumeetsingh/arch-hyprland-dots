@@ -209,13 +209,13 @@ wallpaper_scheme = "m3-content"
 directory = "~/Pictures/Wallpapers"
 
     [wallpaper.default]
-    path = "/home/rumit/Pictures/Wallpapers/tanjiro-kamado-red-2560x1440-22577.png"
+    path = "/home/rumit/Pictures/Wallpapers/zenitsu-agatsuma-2560x1440-26520.jpg"
 
     [wallpaper.last]
-    path = "/home/rumit/Pictures/Wallpapers/tanjiro-kamado-red-2560x1440-22577.png"
+    path = "/home/rumit/Pictures/Wallpapers/zenitsu-agatsuma-2560x1440-26520.jpg"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/rumit/Pictures/Wallpapers/tanjiro-kamado-red-2560x1440-22577.png"
+    path = "/home/rumit/Pictures/Wallpapers/zenitsu-agatsuma-2560x1440-26520.jpg"
 
 [widget.Chrome]
 color = "primary"
@@ -241,7 +241,7 @@ tooltip = "Files"
 type = "custom_button"
 
     [widget.Files.actions]
-    left = "exec exec nautilus --new-window"
+    left = "exec nautilus --new-window"
 
 [widget.Heroic]
 glyph = "bluetooth-device-gamepad"
@@ -259,7 +259,7 @@ tooltip = "Firefox"
 type = "custom_button"
 
     [widget.Internet.actions]
-    left = "exec exec firefox"
+    left = "exec firefox"
 
 [widget.Steam]
 glyph = "brand-steam"
@@ -275,7 +275,7 @@ tooltip = "Terminal"
 type = "custom_button"
 
     [widget.Terminal.actions]
-    left = "exec exec kitty"
+    left = "exec kitty"
 
 [widget.VSCode]
 color = "#23A9F2"
@@ -284,7 +284,7 @@ tooltip = "Visual Studio Code"
 type = "custom_button"
 
     [widget.VSCode.actions]
-    left = "exec exec code"
+    left = "exec code"
 
 [widget.active_window]
 capsule_fill = "primary"

@@ -37,7 +37,7 @@ hl.monitor({
 
 -- Set programs that you use
 local terminal = "kitty"
-local fileManager = "nautilus"
+local fileManager = "nautilus --new-window"
 local menu = "hyprlauncher"
 local browser = "google-chrome-stable"
 
