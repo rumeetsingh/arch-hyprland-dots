@@ -88,6 +88,15 @@ sidebar = "full"
 sidebar_section = "none"
 width = 800
 
+    [[control_center.shortcuts]]
+    type = "wifi"
+
+    [[control_center.shortcuts]]
+    type = "bluetooth"
+
+    [[control_center.shortcuts]]
+    type = "notification"
+
 [desktop_widgets]
 schema_version = 2
 widget_order = [ "desktop-widget-0000000000000001" ]
