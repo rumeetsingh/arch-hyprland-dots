@@ -3,11 +3,24 @@ linemode = "size"
 
 [opener]
 edit = [
+    # Option 1: Open Micro in a new Kitty window
     { run = 'kitty micro %s', desc = "Micro (new Kitty window)", for = "unix" },
+
+    # VS Code without blocking Yazi
+    { run = 'code %s', desc = "VS Code" }
+]
+loupe = [
+    { run = 'loupe %s', orphan = true, desc = "Loupe" }
 ]
 
 [open]
 prepend_rules = [
+    # Custom rule for SVG files:
+    # 1. Pressing Enter will default to "image" opener group (or system image viewer)
+    # 2. Pressing 'O' (Open with...) lets you select "edit" (Micro / VS Code)
+    { url = "*.svg", use = [ "loupe", "edit" ] },
+
+    # Default rules to edit text and JSON
     { mime = "text/*", use = "edit" },
     { mime = "application/json", use = "edit" },
 ]
