@@ -217,7 +217,7 @@ source = "wallpaper"
 wallpaper_scheme = "m3-content"
 
     [theme.templates]
-    builtin_ids = [ "gtk3", "hyprland", "kitty", "qt" ]
+    builtin_ids = [ "gtk3", "gtk4", "hyprland", "kitty", "qt" ]
     enable_community_templates = true
 
 [wallpaper]

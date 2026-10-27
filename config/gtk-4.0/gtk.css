@@ -10,3 +10,5 @@ window.background {
 headerbar {
     background-color: alpha(@headerbar_bg_color, 0.85);
 }
+
+@import url("noctalia.css");
