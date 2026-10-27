@@ -217,8 +217,8 @@ source = "wallpaper"
 wallpaper_scheme = "m3-content"
 
     [theme.templates]
-    builtin_ids = [ "gtk3", "hyprland", "qt" ]
-    enable_community_templates = false
+    builtin_ids = [ "gtk3", "hyprland", "kitty", "qt" ]
+    enable_community_templates = true
 
 [wallpaper]
 directory = "~/Pictures/Wallpapers"
