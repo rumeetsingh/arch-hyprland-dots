@@ -203,6 +203,10 @@ hl.animation({ leaf = "zoomFactor", enabled = true, speed = 7, bezier = "quick" 
 --     border_size = 0,
 --     rounding    = 0,
 -- })
+hl.window_rule({
+    match = { class = "com.microsoft.VSCode" },
+    opacity = "0.85 override 0.7 override",
+})
 
 -- See https://wiki.hypr.land/Configuring/Layouts/Dwindle-Layout/ for more
 hl.config({
