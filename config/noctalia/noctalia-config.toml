@@ -213,24 +213,24 @@ settings_window_translucent = true
 builtin = "Tokyo-Night"
 community_palette = "Macaron"
 mode = "dark"
-source = "builtin"
+source = "wallpaper"
 wallpaper_scheme = "m3-content"
 
     [theme.templates]
-    builtin_ids = [ "gtk3", "qt" ]
+    builtin_ids = [ "gtk3", "hyprland", "qt" ]
     enable_community_templates = false
 
 [wallpaper]
 directory = "~/Pictures/Wallpapers"
 
     [wallpaper.default]
-    path = "/home/rumit/Pictures/Wallpapers/tanjiro-kamado-red-2560x1440-22577.png"
+    path = "/home/rumit/Pictures/Wallpapers/levi-ackerman-5120x2880-16920.jpg"
 
     [wallpaper.last]
-    path = "/home/rumit/Pictures/Wallpapers/tanjiro-kamado-red-2560x1440-22577.png"
+    path = "/home/rumit/Pictures/Wallpapers/levi-ackerman-5120x2880-16920.jpg"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/rumit/Pictures/Wallpapers/tanjiro-kamado-red-2560x1440-22577.png"
+    path = "/home/rumit/Pictures/Wallpapers/levi-ackerman-5120x2880-16920.jpg"
 
 [widget.Chrome]
 color = "primary"
