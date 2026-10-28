@@ -331,7 +331,9 @@ interactive = false
 
 [widget.control-center]
 custom_image = "/home/rumit/.icons/arch.svg"
+custom_image_colorize = true
 glyph = ""
+icon_color = "primary"
 
 [widget.date]
 capsule = true
