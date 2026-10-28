@@ -14,7 +14,6 @@
 
 -- You can (and should!!) split this configuration into multiple files
 -- Create your files separately and then require them like this:
-local colors = require("colors")
 
 ------------------
 ---- MONITORS ----
@@ -101,17 +100,6 @@ hl.config({
 		gaps_out = 10,
 
 		border_size = 1,
-
-		col = {
-			active_border = {
-				colors = {
-
-					"rgba(" .. colors.border_active .. "ee)",
-				},
-				angle = 45,
-			},
-			inactive_border = "rgba(" .. colors.border_inactive .. "aa)",
-		},
 
 		-- Set to true to enable resizing windows by clicking and dragging on borders and gaps
 		resize_on_border = false,
