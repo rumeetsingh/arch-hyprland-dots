@@ -235,7 +235,7 @@ directory = "~/Pictures/Wallpapers"
 [widget.Chrome]
 color = "primary"
 glyph = "brand-chrome"
-icon_color = "tertiary"
+icon_color = "#4285F4"
 show_tooltip = false
 tooltip = ""
 type = "custom_button"

@@ -12,13 +12,17 @@ edit = [
 loupe = [
     { run = 'loupe %s', orphan = true, desc = "Loupe" }
 ]
+chrome = [
+    { run = 'google-chrome-stable %s', orphan = true, desc = "Google Chrome" }
+]
 
 [open]
 prepend_rules = [
-    # Custom rule for SVG files:
-    # 1. Pressing Enter will default to "image" opener group (or system image viewer)
-    # 2. Pressing 'O' (Open with...) lets you select "edit" (Micro / VS Code)
+    # SVG: Enter opens Loupe, 'O' lets you pick edit
     { url = "*.svg", use = [ "loupe", "edit" ] },
+
+    # HTML: Enter opens the editor, 'O' lets you pick Chrome (or vice versa)
+    { url = "*.html", use = [ "edit", "chrome" ] },
 
     # Default rules to edit text and JSON
     { mime = "text/*", use = "edit" },
