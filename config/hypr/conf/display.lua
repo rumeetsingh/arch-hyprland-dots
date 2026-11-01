@@ -12,3 +12,13 @@ hl.monitor({
 	-- cm = "hdr",
 	-- supports_hdr = 1,
 })
+
+-----------------
+---- RENDER -----
+-----------------
+
+hl.config({
+	render = {
+		cm_auto_hdr = 0,
+	},
+})
